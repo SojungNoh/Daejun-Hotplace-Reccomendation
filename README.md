@@ -61,7 +61,8 @@
 ## 3. Recommendation
   최종적인 추천은 다음과 같이 이루어졌다. 결과를 도출하기는 했지만, 유저의 True Like와 겹치는 아이템이 모든 방식에서 거의 없는 것을 알 수 있다.   
 
-![캡처6](https://user-images.githubusercontent.com/52244004/174430023-137281b4-61d2-40fb-b851-a2186f1b06d2.PNG)
+![캡처5](https://user-images.githubusercontent.com/52244004/174430157-f31c5c89-72f7-4176-b706-eed2b1afd21c.PNG)
+
       
       
 ## 4. Evaluation
