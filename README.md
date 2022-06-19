@@ -47,7 +47,7 @@
 
     
     
-## 2. Modeling 
+### 2. Modeling 
 **(1) Contents Based Recommendation (cosine similiarity)**    
 **(2) Collaborative Filtering (alternating least squares)**     
 **(3) Graph-Based Recommendation (Light GCN)**     
@@ -58,14 +58,14 @@
 
     
     
-## 3. Recommendation
+### 3. Recommendation
   최종적인 추천은 다음과 같이 이루어졌다. 결과를 도출하기는 했지만, 유저의 True Like와 겹치는 아이템이 모든 방식에서 거의 없는 것을 알 수 있다.   
 
 ![캡처5](https://user-images.githubusercontent.com/52244004/174430157-f31c5c89-72f7-4176-b706-eed2b1afd21c.PNG)
 
       
       
-## 4. Evaluation
+### 4. Evaluation
   결과 해석을 하기 위해 도입한 매트릭은 MAP@K, NDCG다. 각각 적절한 결과의 랭킹이 높을수록 더 높은 값을 내는 방식이기 때문에, 추천시스템에 적합한 평가모델이다. MAP@K는 Precision을 기반으로 한 평가방식으로, 실제 추천에 유저의 like 아이템이 있었는지를 확인하는 Binary 방식이다. NDCG도 같은 방식이지만, Precision 대신 Relevancy를 사용한다. 추천된 아이템과 유저의 like 아이템간의 relevancy를 계산에 사용하는 non-binary 방식이다. 결과가 이렇게 나오긴 했지만, 무지성으로 이 matrix를 도입하는건 문제가 있을 수 있다. 왜냐하면 우리는 무지성으로 위 매트릭스를 반영했는데, 이 방식에서의 전제는; *유저 A가 좋아한다고 한 아이템을 정확히 맞추는* 방식이기 때문이다. 추천시스템이라면 *유저 A가 아직 경험해보지는 못했지만, 좋아할만한 아이템을 제시하는* 방식이어야한다고 생각한다.  
  
 ![캡처6](https://user-images.githubusercontent.com/52244004/174430031-0d54d671-f468-417f-bad4-ae005b8c7936.PNG)
@@ -77,7 +77,7 @@
    이런 최악의 상황에서도 랜덤 추천보다는 성능이 약 3배 낫기 때문이다.         
       
       
-## 5. Discussion
+### 5. Discussion
   전반적으로 낮은 성능이 낮은 이유를 파악하기 위해, 추천시스템의 성능을 평가할 때 벤치마크가 되는 Movielens-1M의 데이터셋과 우리의 데이터셋을 비교해봤다.   
   
 ![캡처7](https://user-images.githubusercontent.com/52244004/174430040-b35929c6-58c5-4141-bec6-eb563aa53eac.PNG)   
